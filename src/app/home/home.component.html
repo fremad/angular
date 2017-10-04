@@ -1,0 +1,13 @@
+<md-sidenav-container class="sidenav-content">
+  <md-sidenav #sidenav mode="side" opened="true" class="my-sidenav">
+    <ul>
+      <li>Home</li>
+      <li>Workouts</li>
+    </ul>
+  </md-sidenav>
+  <div class="my-content container-fluid">
+    <button id="sidebar-btn" type="button" md-button (click)="sidenav.toggle()"> <i class="fa fa-exchange fa-2x" aria-hidden="true"></i></button>
+    <!-- <router-outlet></router-outlet> -->
+    <input type="text" class="form-control">
+  </div>
+</md-sidenav-container>
