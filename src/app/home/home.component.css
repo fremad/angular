@@ -1,0 +1,22 @@
+.my-sidenav {
+    padding: 0;
+    width: 10%; 
+    border-right: solid 3px gray;
+}
+
+.my-sidenav ul {
+    padding: 0;
+    margin: 0;
+    margin-left: 1em;
+    list-style-type: none;
+}
+
+.my-sidenav ul li{
+    font-size: 1.3em;
+    height: 2em;
+    width: 100%;
+}
+
+.my-sidenav ul li:hover{
+    background-color: #EADEDE;
+}

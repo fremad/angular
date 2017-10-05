@@ -48,7 +48,7 @@ export class AuthService {
   }
 
   register(user: User): Observable<boolean> {
-    // console.log(name, email, password);
+    console.log(user.name, user.email, user.password);
     return this.http.post
       ('http://localhost:3000/api/register', { name: user.name, email: user.email, password: user.password })
       .map((response: Response) => {

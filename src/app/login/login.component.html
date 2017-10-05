@@ -1,6 +1,6 @@
 <div class="loginbox">
   <form class="example-form" (ngSubmit)="login()">
-      <h4>Welcome to ExerciseMe...</h4>
+      <h4 class="mat-headline">Welcome to ExerciseMe...</h4>
     <md-form-field class="example-full-width">
       <input mdInput type="text" placeholder="Email" [formControl]="emailFormControl" name="email" [(ngModel)]="user.email">
       <md-error *ngIf="emailFormControl.hasError('pattern')">

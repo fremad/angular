@@ -2,7 +2,7 @@
     <form class="example-form" (ngSubmit)="onSubmit()">
         <h4>Register an account and join ExerciseMe!</h4>
       <md-form-field class="example-full-width">
-        <input mdInput type="text" placeholder="Email" [formControl]="emailFormControl" name="email" [(ngModel)]="email">
+        <input mdInput type="text" placeholder="Email" [formControl]="emailFormControl" name="email" [(ngModel)]="user.email">
         <md-error *ngIf="emailFormControl.hasError('pattern')">
           Please enter a valid email address
         </md-error>
@@ -12,19 +12,19 @@
       </md-form-field>
 
       <md-form-field class="example-full-width">
-          <input mdInput type="text" placeholder="Username" name="name" [(ngModel)]="name" [formControl]="userFormControl">
+          <input mdInput type="text" placeholder="Username" name="name" [(ngModel)]="user.name" [formControl]="userFormControl">
           <md-error *ngIf="userFormControl.hasError('required')">
             Username is <strong>required</strong>
           </md-error>
         </md-form-field>
 
       <md-form-field class="example-full-width">
-        <input mdInput type="password" name="password" [(ngModel)]="password" placeholder="Password" [formControl]="passwordFormControl">
+        <input mdInput type="password" name="password" [(ngModel)]="user.password" placeholder="Password" [formControl]="passwordFormControl">
         <md-error *ngIf="passwordFormControl.hasError('required')">
           Password is <strong>required</strong>
         </md-error>
       </md-form-field>
-      <button md-button type="submit">Login</button>
+      <button md-button type="submit">Register!</button>
       <a routerLink="/login"><button md-button>Back to login page</button> </a>
     </form>
   </div>

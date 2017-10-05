@@ -19,10 +19,7 @@ export class RegisterComponent {
   }
 
   message: string;
-  name: string;
-  email: string;
-  password: string;
-  user: User;
+  user = new User;
 
   emailFormControl = new FormControl('', [
     Validators.required,
